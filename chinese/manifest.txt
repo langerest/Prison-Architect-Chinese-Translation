@@ -1,0 +1,7 @@
+
+Name                 简体中文汉化补丁优化版  
+Description          "简体中文汉化补丁，在官方汉化补丁的基础上修改而成，\n支持update5。\n\n 修改内容：\n·补全官方汉化补丁未汉化部分。\n·修正翻译错误。\n·添加换行。"  
+IsTranslation        true  
+Author               langer  
+FileID               F640683745  
+SteamAuthor          A76561198128502887  
