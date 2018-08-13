@@ -513,7 +513,7 @@ conviction_intro_2                      Until a permanent replacement is found f
 conviction_intro_3                      There have been a spate of suicides at this facility recently, and it's not hard to see why. But we have a more immediate problem.
 conviction_intro_4                      The powers that be have decided to send us a huge batch of new inmates. The first will be arriving tomorrow, and we don't have anywhere to house them.
 conviction_intro_5                      We need you to build a brand new cell block, with enough space to handle the new intake. 
-conviction_intro_5b 					I've laid out a potential design for the new cell block here. This should give us enough new cells to handle the intake, and the design includes it's own shower facility. 
+conviction_intro_5b 					I've laid out a potential design for the new cell block here. This should give us enough new cells to handle the intake, and the design includes its own shower facility. 
 conviction_intro_5c 					But it's up to you if you choose to follow this design or do something totally different.
 conviction_intro_6                      My job is to prioritise the welfare of these men. Get that new cell block built, then we'll talk about how to achieve that.
 
@@ -868,7 +868,6 @@ escapemode_surrender_safe               End Fight
 escapemode_surrender_button             Space
 
 escapemode_helpletter                   Help
-escapemode_gameover                     Game Over
 
 escapemode_reputation_points            Rep Points:
 escapemode_reputations_cost             *C Rep Points
@@ -917,6 +916,30 @@ escapemode_gameover_time                *H Hours and *M Minutes
 
 codex_workshop_select_random_prison     Random Workshop Prison
 codex_workshop_searching                Searching
+
+
+# =============================================================================
+# Warden Mode
+# =============================================================================
+
+codex_wardenmode_debugstart             Start Warden Mode
+
+buildtoolbar_inventory                  Inventory
+buildtoolbar_tooltip_inventory          Shortcut: (TAB)\n\nManage the warden's inventory and personal protection squad.
+
+wardenmode_combat                       SELF DEFENCE AUTHORISED
+wardenmode_combat_caption               You are now free to defend yourself from violent prisoners
+
+wardenmode_combatwarning                SELF DEFENCE UNAUTHORISED
+wardenmode_combatwarning_caption        You must not harm prisoners unless acting in self defence
+
+wardenmode_info_pick_up                 to pick up
+
+wardensquad_wardenprotection            Warden Protection
+wardensquad_recruitment_cost            Cost Per Day: +$*C
+wardensquad_nameplate_following         Following
+wardensquad_remove_member               Remove Warden Protection
+wardensquad_remove_member_tooltip       Click to remove this guard from your personal protection squad.\nThis will save you $*C per day.
 
 
 # =============================================================================
