@@ -1,4 +1,4 @@
-
+﻿
 # =============================================================================
 # Basic dialog strings
 # =============================================================================
@@ -194,6 +194,10 @@ interfacedeployment_zonered                     Red Wing
 interfacedeployment_zonegreen                   Green Wing
 interfacedeployment_zoneblue                    Blue Wing
 interfacedeployment_zoneyellow                  Yellow Wing
+interfacedeployment_zoning                      Zoning
+interfacedeployment_accessonly					Access Only
+interfacedeployment_prisonerdirection			Prisoner Direction
+interfacedeployment_staffdirection				Others Direction
 
 interfacelogistics_jobs                         Prison Labour
 interfacelogistics_removejobs                   Remove Labour
@@ -220,6 +224,7 @@ interfacecontraband_source                      Dangers
 interfacecontraband_day                         -24 Hours
 interfacecontraband_week                        -7 Days
 interfacecontraband_alltime                     -30 Days
+interfacecontraband_stolenfrom					Stolen From
 interfacecontraband_informants                  Informants
 interfacecontraband_gangs                       Gangs
 
@@ -248,6 +253,7 @@ interfacetopbar_title_day						Day
 interfacetopbar_title_prisoners					Prisoners
 interfacetopbar_title_guards					Guards
 interfacetopbar_title_tension                   Danger
+interfacetopbar_title_weathericon               Weather
 
 interfacetopbar_tooltip_balance					How much cash you have in the bank.\n\nClick to raise more funds through the Grants list.
 interfacetopbar_tooltip_budget					The amount of money you will receive each day, based on your current expenses and income.\n\nClick to access a detailed financial breakdown of income and expenses. 
@@ -256,6 +262,7 @@ interfacetopbar_tooltip_day						How long you've been running your prison.
 interfacetopbar_tooltip_prisoners				The number of prisoners you currently have, and how many you can hold, in your prison.
 interfacetopbar_tooltip_guards					How many guards you have available for work in your prison.
 interfacetopbar_tooltip_tension                 The overall danger level of your prison, according to your security chief.
+interfacetopbar_tooltip_weathericon             The current weather and temperature.
 
 interfacetopbar_tooltip_recenttransactions      Recent Transactions
 
@@ -267,13 +274,20 @@ interfacetopbar_tooltip_guardstationed          *X Stationed
 interfacetopbar_tooltip_guardpatrolling         *X Patrolling
 interfacetopbar_tooltip_guardavailable          *X Available
 interfacetopbar_tooltip_guardresting            *X Resting
+interfacetopbar_tooltip_guardonbreak            *X On Break
+interfacetopbar_tooltip_guardwantsabreak        (*X need a break)
 interfacetopbar_tooltip_guardactive             (*X Responding to incidents)
 interfacetopbar_tooltip_guarddoingjob           *X Doing Jobs
 interfacetopbar_tooltip_idle                    (*X are idle)
-interfacetopbar_tooltip_armedguards             + *X Armed Guards
-interfacetopbar_tooltip_dogs                    + *X Dog handlers
+interfacetopbar_tooltip_guardsstriking          *X ARE ON STRIKE
+
+interfacetopbar_tooltip_regularguards			There are *X regular Guards
+interfacetopbar_tooltip_armedguards             There are *X Armed Guards
+interfacetopbar_tooltip_dogs                    There are *X Dog handlers
+interfacetopbar_tooltip_snipers					There are *X Snipers
 
 interfacetopbar_unlimitedfunds                  UNLIMITED FUNDS
+interfacetopbar_cheatsenabled					CHEATS ENABLED
 
 interfacetopbar_budget_moneyin					Money In: $*M /day
 interfacetopbar_budget_moneyout					Money Out: $*M /day
@@ -316,6 +330,20 @@ interfacetopbar_tension_recentsearches          + *X prisoners have been unneces
 interfacetopbar_tension_angrygangmembers        + *X GANG MEMBERS ARE FURIOUS (leader being punished)
 interfacetopbar_tension_recentpunishments       = (DETERRENT) *X punishments have been handed down recently
 interfacetopbar_tension_recentcalmed            - *X prisoners have been calmed recently
+interfacetopbar_tension_staffmorale_low			+ Staff morale is low
+interfacetopbar_tension_staffmorale_high		- Staff morale is high
+interfacetopbar_tension_staffonstrike           + Your Staff are on strike
+interfacetopbar_tension_dangerzone				+ DANGER ZONE!
+interfacetopbar_tension_hoursonrollcall         + Prisoners are angry about Roll Call
+
+interfacetopbar_staffmorale_title				STAFF MORALE
+interfacetopbar_staffmorale_happystaff			+ *X staff are happy in their job
+interfacetopbar_staffmorale_unhappystaff		- *X staff have serious complaints 
+interfacetopbar_staffmorale_injuredstaff		- *X staff are injured
+interfacetopbar_staffmorale_staffdeaths			- *X staff have died on duty
+interfacetopbar_staffmorale_staffpayverygood	+ Staff are incredibly well paid
+interfacetopbar_staffmorale_staffpaygood		+ Staff are paid well
+interfacetopbar_staffmorale_staffpaybad 		- Staff are not paid enough
 
 interfacecontrol_mainmenu                       Main Menu (Esc)
 interfacecontrol_mainmenu_tooltip               Toggle the main menu (New/Load/Save/Exit etc)
@@ -325,6 +353,8 @@ interfacecontrol_research                       Bureaucracy
 interfacecontrol_research_tooltip               Opens the Bureaucracy screen, where you can assign your administrators to unlock new items, staff types, and facilities.
 interfacecontrol_grading                        Prison Grading
 interfacecontrol_grading_tooltip                Opens the Prison Grading screen, which shows you an overall rating of how successful you have been.
+interfacecontrol_graphs                         Graphs
+interfacecontrol_graphs_tooltip                 Opens the Graphs screen, which allows you to compare graphs of various aspects of your prison.
 
 interface_confirmlandbuy                        Are you sure you wish to buy this plot of land for $*X?
 interface_loadconfirm                           Are you sure you wish to load this map? All unsaved progress will be lost.
@@ -339,10 +369,12 @@ interface_action_medicalbay                     Medical Bay
 interface_action_search                         Search
 interface_action_searchcell                     Search Cell
 interface_action_searchcellblock                Search Cell Block
+interface_action_searchtoilets                  Search Toilets
 interface_action_sack                           Sack
+interface_action_dooropen                       Open Door
 interface_action_doormodenormal                 Door Mode: Normal
-interface_action_doormodelockedshut             Door Mode: Locked Shut
-interface_action_doormodelockedopen             Door Mode: Locked Open
+interface_action_doormodelockedshut             Lock shut
+interface_action_doormodelockedopen             Lock open
 interface_action_switchon                       Switch On
 interface_action_switchoff                      Switch Off
 interface_action_sellobject                     Sell Object
@@ -351,6 +383,8 @@ interface_action_connect                        Connect
 interface_action_clearconnections               Clear Connections
 interface_action_servoopen                      Open On Trigger
 interface_action_servoclose                     Close On Trigger
+interface_action_follow                         Follow
+interface_action_rapsheet                       Show Rapsheet
 
 interface_contents_container                    Contents : *X 
 interface_contents_stack                        Contents : *X x *Y 
@@ -372,7 +406,6 @@ sector_jobs_qualified                           Qualified Prisoners: *X
 sector_jobs_required                            (Required: *X)
 sector_noaccess                                 NO ACCESS
 sector_insecure                                 INSECURE
-
 
 
 # =============================================================================
@@ -400,16 +433,20 @@ buildtoolbar_bangup                     Bangup
 buildtoolbar_lockdown                   Lockdown
 buildtoolbar_shakedown                  Shakedown
 buildtoolbar_weaponsfree                Freefire
+buildtoolbar_rollcall                   Roll Call
 
 buildtoolbar_tooltip_reports			Open up the reports window to see information on your prisoners, staff, income, grants, and more.
 buildtoolbar_tooltip_bangup				Send all (willing) prisoners back to their cells. This will make your prisoners very angry if you leave them locked up for too long.
 buildtoolbar_tooltip_lockdown			Instantly lock all doors in the prison.
 buildtoolbar_tooltip_shakedown          Order an immediate search of all Cells. This will take some time and will annoy the hell out of your inmates.
 buildtoolbar_tooltip_weaponsfree        Authorises your armed guards to use lethal force. Snipers will no longer fire warning shots before taking a target down.
+buildtoolbar_tooltip_nostrike           Not available during Staff Strikes.
+buildtoolbar_tooltip_rollcall           Call all of your prisoners to stand outside of their cells. Only avaiable during sleep regimes and during the night.
 
 buildtoolbar_cost						Cost: $*C
 buildtoolbar_cost_sqrft					Cost: $*C /sq
 buildtoolbar_wages						Wages : $*W per day
+buildtoolbar_upkeep						Upkeep : $*W per day
 buildtoolbar_outdoor					Outdoor only
 buildtoolbar_indoor						Indoor only
 buildtoolbar_walk_speed					Walk Speed : *S
@@ -471,6 +508,7 @@ buildtoolbar_popup_room_paroleroom      Your prisoners will be eligible for paro
 buildtoolbar_popup_room_library         Your prison will be sent boxes of discarded and used books from around the country. Prisoners will need to sort those books onto the shelves.
 buildtoolbar_popup_room_intake          Where your prisoners are first taken when they arrive.
 buildtoolbar_popup_room_nursery         Activity room for prisoners with babies. 
+buildtoolbar_popup_room_shop            Shops give your prisoners a place to spend their hard-earned money in order to satisfy their need for luxuries. Can also help with hygiene, food and recreation. You'll receive money for each sale plus a commission each day for the total goods sold.
 
 buildtoolbar_popup_obj_bed				Not too soft, not too hard, just right. Well, actually, really hard and too small.
 buildtoolbar_popup_obj_toilet			A basic human right, if you believe all those crackpots.
@@ -490,9 +528,9 @@ buildtoolbar_popup_obj_light			Ensure you can see your prisoners at all times of
 buildtoolbar_popup_obj_cooker			Give your prisoners the life of luxury with hot food.
 buildtoolbar_popup_obj_fridge			Keep your food supplies from rotting.
 buildtoolbar_popup_obj_bin				Tidiness is important when it comes to contraband.
-buildtoolbar_popup_obj_sink				All employees are required to wash their hands.
+buildtoolbar_popup_obj_sink				All employees are required to wash their hands. Will work faster if connected to hot water.
 buildtoolbar_popup_obj_servingtable		Dish up food to your prisoners.
-buildtoolbar_popup_obj_showerhead		The head of a shower. For showering.
+buildtoolbar_popup_obj_showerhead		The head of a shower. For showering. Showering with hot water makes your prisoners happier.
 buildtoolbar_popup_obj_bookshelf		A shelf that holds books. 
 buildtoolbar_popup_obj_officedesk		Your staff need to write things down a lot. Give them a shiny office desk to do it on.
 buildtoolbar_popup_obj_filingcabinet	Your staff need to keep the things they write ordered nicely.
@@ -503,14 +541,16 @@ buildtoolbar_popup_obj_sprinkler		Automatically sprays the area with water in th
 buildtoolbar_popup_obj_metaldetector	Find contraband on your prisoners that pass through these. Will require a guard to be nearby to take the contraband.
 buildtoolbar_popup_obj_weightsbench		Allow your prisoners to exercise, which keeps them happy.
 buildtoolbar_popup_obj_phonebooth		Prisoners might want to talk to their family, and these handy phonebooths let them.
-buildtoolbar_popup_obj_tv				Pacify your prisoners with mind-numbing mediocrity.
-buildtoolbar_popup_obj_largetv			Allow lots of your prisoners to share the experience of brain rot.
+buildtoolbar_popup_obj_tv				Pacify your prisoners with mind-numbing mediocrity. Requires a place for prisoners to sit in front of the TV.
+buildtoolbar_popup_obj_largetv			Allow lots of your prisoners to share the experience of brain rot. Requires a place for prisoners to sit in front of the TV.
+buildtoolbar_popup_obj_radio            Lets your prisoners listen to their favourite boy bands as they go about their day. Makes all prisoners in the same room slightly happier. 
 buildtoolbar_popup_obj_pooltable		Remove the monotony of prison life with a game of pool. 
 buildtoolbar_popup_obj_dismantleobject	Remove an object from your prison.
 buildtoolbar_popup_obj_altar            Relays your prayers directly to your higher power of choice.
 buildtoolbar_popup_obj_pews             Seats for the faithful. Made from the hardest, most unpadded of woods.
 buildtoolbar_popup_obj_prayermat        Protect your prisoners from the dirty floor while they offer their prayers. 
 buildtoolbar_popup_obj_guardtower       A tower from which your snipers (hired separately) can watch over your prison.
+buildtoolbar_popup_obj_roadbarrier      A sturdy road barricade that can stop even speeding trucks. Only closes during Lockdown.
 
 buildtoolbar_popup_staff_workman		Will build your prison for you, based on the plans you provide them.
 buildtoolbar_popup_staff_guard			Used to keep your prisoners in check and out of trouble.
@@ -555,9 +595,10 @@ buildtoolbar_popup_autolights           Automatic Light Placement
 buildtoolbar_popup_autolights_desc      When selected, lights will automatically be placed throughout your newly created buildings once they are finished.
 
 buildtoolbar_contraband_source          Shows all the locations around your prison that contraband could be stolen from.
-buildtoolbar_contraband_day             Shows all contraband confiscated in the last 24 hours.
-buildtoolbar_contraband_week            Shows all contraband confiscated in the last 7 days.
-buildtoolbar_contraband_alltime         Shows all contraband confiscated in the history of your prison.
+buildtoolbar_contraband_day             Shows all contraband confiscated in the last 24 hours. The icons show where the contraband was confiscated.
+buildtoolbar_contraband_week            Shows all contraband confiscated in the last 7 days. The icons show where the contraband was confiscated.
+buildtoolbar_contraband_alltime         Shows all contraband confiscated in the history of your prison. The icons show where the contraband was confiscated.
+buildtoolbar_contraband_stolenfrom		Shows all contraband from the last 7 days. The icons show where the contraband was stolen from, or smuggled into the prison.
 buildtoolbar_contraband_informants      Shows information gathered by your confidential informants.
 buildtoolbar_contraband_gangs           Shows information about your prison's gangs.
 
@@ -574,21 +615,190 @@ buildtoolbar_deployment_SuperMaxZone    Only 'superMax' security prisoners will 
 buildtoolbar_deployment_DeathRowZone    Only 'death row' prisoners will be permitted to enter this sector.
 buildtoolbar_deployment_StaffOnlyZone   Only staff will be permitted to enter this sector.
 buildtoolbar_deployment_UnlockedZone    Anyone will be permitted to enter this zone, and all doors will be unlocked.
+buildtoolbar_deployment_accessonly		People will try to avoid Access-Only zones if possible, preferring to take other routes around your prison.
+buildtoolbar_deployment_prisonerdirection Click and drag to paint floor signage.\n\nThis gives a hint to your prisoners on which way to go.\nHelps to control the flow of people in your prison.
+buildtoolbar_deployment_staffdirection  Click and drag to paint floor signage.\n\nThis gives a hint to non-prisoners on which way to go.\nHelps to control the flow of people in your prison.
+
+buildtoolbar_quickbuild_clone           The Clone tool lets you select an area of your prison to copy, and then place that area again. With the Clone tool selected, hold the Right Mouse button and drag an area that you want to copy. Then, Left Click somewhere else in the prison to queue up construction of a copy of that area.
+
+# The ~ and ^ characters in front of some of the lines in the buildtoolbar_popup_help section are colour codes and should be preserved during translation
+
+buildtoolbar_popup_help_targettingfood_1    The Food Distribution view shows you which cell blocks are being served by which canteens, and which canteens are being supplied by which kitchens. You can also see the current supply and demand of currently active kitchens and canteens (cooking starts 4 hours before the next Eat regime).
+buildtoolbar_popup_help_targettingfood_2    ~Left Click a cell block, and then Left Click a canteen to force the selected cell block to use that Canteen. You can also change which kitchens target which canteens in the same way. Right Clicking a zone will cause its targeting to reset to default.\n\n
+buildtoolbar_popup_help_targettingfood_3    ~Holding Shift while Left Clicking will let you target multiple rooms.\n\n
+buildtoolbar_popup_help_targettingfood_4    ^Tips
+buildtoolbar_popup_help_targettingfood_5    - If you find a Cell Block or Kitchen isn't targeting a canteen as you would expect, try Right-Clicking it to force it to reset.
+buildtoolbar_popup_help_targettingfood_6    - If you notice that your Supply to a canteen doesn't fill all the way up during an Eat session, it's a good indication that it's overloaded and you need to be able to cook more food.
+
+buildtoolbar_popup_help_targettinglaundry_1 The Laundry Distribution view shows you which cell blocks, dormitories and receptions are being targeted by which laundry rooms.\n\n
+buildtoolbar_popup_help_targettinglaundry_2 ~Left Clicking a Laundry and then Left Clicking a cell block, dormitory or reception to make the laundry serve that room. Hold Shift to target multiple rooms.
+buildtoolbar_popup_help_targettinglaundry_3 ~Right Clicking a Laundry will cause its targeting to reset to default. \n\n
+buildtoolbar_popup_help_targettinglaundry_4 ^Tips
+buildtoolbar_popup_help_targettinglaundry_5 Laundry rooms can target as many different rooms as you want, but they are limited in how fast they can operate (based on their size and the number of Prisoners or Janitors working there). Having a single laundry serve an entire large prison can work, but each room will get their clothes very sporadically. 
+
+buildtoolbar_popup_help_roomquality_1       The Room Quality view shows you the quality of all of the cells and dormitories in your prison, graded from 0 to 10 - the higher the number, the better the quality. Mousing over a room will show you the factors that went into determining it's quality, and what you can add to increase that quality.\n\n
+buildtoolbar_popup_help_roomquality_2       ^Tips
+buildtoolbar_popup_help_roomquality_3       - Prisoners are entitled to a higher quality cell for good behaviour over time. Having higher quality cells available is a good way to incentivise good behaviour.
+buildtoolbar_popup_help_roomquality_4       - It's important to keep some low quality cells in your prison, as new arrivals to your prison will need somewhere to go, and if all the available cells are too high quality they might find themselves in a holding cell.
+buildtoolbar_popup_help_roomquality_5       - Prisoners can be placed in a higher quality cell than they deserve if there is no other space available, but it might make the other prisoners unhappy...
+
+buildtoolbar_popup_help_jobs_1              The Prison Labour view shows you which rooms can have prisoners assigned for work, and how many prisoners are currently assigned there.\n\n
+buildtoolbar_popup_help_jobs_2              ~Left Click a room to add a work slot to it. Each work slot can potentially be filled by a prisoner during a work regime. Right Click the room to remove a slot.\n\n
+buildtoolbar_popup_help_jobs_3              ^Tips
+buildtoolbar_popup_help_jobs_4              - Some jobs, such as working in the kitchen or workshop, require the prison to have passed a training course first. You can run these courses from the Programs tab of your report window.
+buildtoolbar_popup_help_jobs_5              - Working prisoners are paid a small amount for every hour that they work. Allocating the maximum number of jobs might not necessarily be the best idea; prisoners still get paid even if there is nothing for them to do.
+
+buildtoolbar_popup_help_source_1           The Dangers view shows which contraband a prisoner can steal from each of the rooms in your prison. Additionally, you can see the supply and demand of each type of contraband to the right. If the demand of a specific type of contraband is higher than the supply, a prisoner is more likely to try and steal it, especially if they are in desperate need of something themselves.\n\n
+buildtoolbar_popup_help_source_2           ^Tips
+buildtoolbar_popup_help_source_3           - Not all rooms that are sources of contraband need to be accessed by prisoners, and their access to those rooms can be restricted or blocked entirely.
+buildtoolbar_popup_help_source_4           - While this shows you which rooms in your prison contraband can be stolen from, rooms aren't the only way for prisoners to get what they need...
+
+buildtoolbar_popup_help_contraband_title    Contraband  
+buildtoolbar_popup_help_contraband_1        The Contraband view shows you all of the contraband that has been found in your prison, either over the last day or the last week, and where it was found.\n\n
+buildtoolbar_popup_help_contraband_2        ~Mouse over a specific piece of contraband to see its history, including how it was originally acquired by the prisoner and where it went before it was found.\n\n
+buildtoolbar_popup_help_contraband_3        ^Tips
+buildtoolbar_popup_help_contraband_4        - If you are finding that a lot of contraband is coming from a relatively small number of places, it might be time to beef up security in those areas.
+buildtoolbar_popup_help_contraband_5        - Different types of contraband are detected in different ways. Guard Dogs, for example, as very good at detecting things that have a strong smell to them.
+
+buildtoolbar_popup_help_informants_1        The Informants view shows you a list of your current Confidential Informants. Additionally, potential CIs are highlighted in yellow, usually in your Solitary Confinement cells.\n\n
+buildtoolbar_popup_help_informants_2        ~To recruit a Confidential Informant, find a Potential CI, go to the Experience tab of their rapsheet and click on the Recruit Informant button.\n\n
+buildtoolbar_popup_help_informants_3        ~To activate an informant, click on the button that says Idle (it will flash Active when you highlight it), and wait for them to be escorted to the Security Office. They will then show you some amount of hidden contraband, prisoner reputations and potential assassination targets, based on their coverage.\n\n
+buildtoolbar_popup_help_informants_4        ^Tips
+buildtoolbar_popup_help_informants_5        - Activating an informant, and performing searches based on the information they give you, will raise their suspicion level. If it gets too high, they might be in for some trouble...
+buildtoolbar_popup_help_informants_6        - You can dismiss an informatant by clicking the 'X' next to their activation button.
+
+buildtoolbar_popup_help_utilities_1         The Utilities view shows you the various connections that are occurring beneath the surface of your prison. You can create electrical cables and water pipes, and also connect various items using wires.\n\n
+buildtoolbar_popup_help_utilities_2         ~When creating electrical cables or pipes, hold the Left Mouse button and drag between the 2 points you want to connect. Right Clicking will cancel any existing tasks to place cables or pipes.\n\n
+buildtoolbar_popup_help_utilities_3         ~When connecting items using wires (e.g., a CCTV Monitor to a CCTV Camera), Left Click the first object, and then Left Click the object you want to connect. Holding down Shift will let you connect multiple objects.\n\n
+buildtoolbar_popup_help_utilities_4         ^Tips
+buildtoolbar_popup_help_utilities_5         - Small electrical items, like lights and TVs, will automatically connect to power as long as an electrical cable is nearby. Larger items, such as Laundry Machines or Water Pumps, will need to be connected directly to the cable.
+buildtoolbar_popup_help_utilities_6         - Large water pipes can carry water over a long distance, but smaller pipes have a shorter range. Having a single large pipe leading to a building or area, and connecting individual objects using smaller pipes, is a good way to save money.
+buildtoolbar_popup_help_utilities_7         - The Utilities view can have a lot going on, especially in larger prisons. Clicking on a specific object will highlight the related connects much more clearly, making it easier to see. For example, clicking electrical cables will make all electrical cables and objects in your prison much clearer.
+buildtoolbar_popup_help_utilities_8         - If you have multiple Power Stations in your prison, they will need to have their own separate Electrical Cables. If Electrical Cables connected to 2 separate Power Stations come in contact, both stations will shut down.
+
+buildtoolbar_popup_help_guard_1             Guards are the main part of your work force in your prison, and will deal with everything from escorting new prisoners to their cells to dealing with fights to searching for contraband.\n\n
+buildtoolbar_popup_help_guard_2             ~With a guard selected, you can order them to move anywhere in your prison by Right Clicking that location. \n\n
+buildtoolbar_popup_help_guard_3             ^Tips
+buildtoolbar_popup_help_guard_4             - Guards can find escape tunnels by searching toilets in Cells. If the toilet is searched specifically, they will find any escape tunnels without fail.
+buildtoolbar_popup_help_guard_5             - If you have a Security Chief, you can see how many idle Guards you have on the information bar at the top of the screen. If you frequently have 0 Guards available, it might be an indication that you don't have enough guards to keep up with their current workload.
+
+buildtoolbar_popup_help_workman_1           Workmen are the people who build your prison, help unload deliveries and, in some cases, bring those deliveries to the various areas of your prison.\n\n
+buildtoolbar_popup_help_workman_2           ^Tips
+buildtoolbar_popup_help_workman_3           Workmen operate largely automatically, however if you want a construction job to be completed quickly you can Ctrl+Right Click the job to mark it as High Priority. This will make the nearest Workman drop what they are doing to go and complete your task.
+
+buildtoolbar_popup_help_cook_1              Cooks prepare the food for your prisoners, clean up the canteen areas and bring food deliveries into the kitchens.\n\n
+buildtoolbar_popup_help_cook_2              ^Tips
+buildtoolbar_popup_help_cook_3              - It is important to make sure you have enough Cooks to keep up with the food demands of your prison. If you don't have enough, they won't be able to prepare enough food and some of your prisoners will go hungry...
+
+buildtoolbar_popup_help_warden_1            Wardens are your link to the Bureaucracy involved in running a prison. They unlock the Bureaucracy window, allowing you to research various new features to use in your prison. Once they are given an Office, they will largely manage themselves.
+
+buildtoolbar_popup_help_armedguard_1        Armed Guards are used to keep especially dangerous or unruly prisoners in line, carrying a shotgun with them at all times. They Suppress all nearby Prisoners making them much less likely to cause trouble, and if their life is threatened they will use their shotgun, which will usually make all other nearby prisoners stop causing trouble.\n\n
+buildtoolbar_popup_help_armedguard_2        ~With an Armed Guard selected, you can order them to move anywhere in your prison by Right Clicking that location. \n\n
+buildtoolbar_popup_help_armedguard_3        ^Tips
+buildtoolbar_popup_help_armedguard_4        - If the Freefire button is activated, Armed Guards will not wait until their life is in danger before using their shotgun. They will just open fire on any prisoners causing trouble. 
+buildtoolbar_popup_help_armedguard_5        - Armed Guards are hard for a prisoner to take down, but if they do their shotgun will just end up laying there on the floor, free for anyone to pick up...
+
+buildtoolbar_popup_help_doctor_1            Doctors are responsible for treating the injuries that prisoners and staff will almost inevitably receive during their time in your prison. They heal injuries, treat overdosing prisoners and run treatment programs for drug addicts.\n\n
+buildtoolbar_popup_help_doctor_2            ~With a Doctor selected, you can order them to move anywhere in your prison by Right Clicking that location.
+
+buildtoolbar_popup_help_janitor_1           Janitors are responsible for keeping your prison clean, and also help run the Laundry rooms.\n\n
+buildtoolbar_popup_help_janitor_2           ^Tips
+buildtoolbar_popup_help_janitor_3           - All of the tasks performed by Janitors can also be performed by working prisoners. With a sufficient number of prisoners assigned to Laundry Rooms and Cleaning Cupboards, it can be possible to get by with very few or even no Janitors.
+
+buildtoolbar_popup_help_gardener_1          Gardeners keep the outdoor areas of your prison tidy, getting rid of the weeds and planting trees.\n\n
+buildtoolbar_popup_help_gardener_2          ^Tips
+buildtoolbar_popup_help_gardener_3          - If you have a Forestry, Gardeners will be responsible for planting the tree saplings you receive. Make sure you have enough to keep up with the intake!
+
+buildtoolbar_popup_help_doghandler_1        Dog Handlers come partnered with a Guard Dog. Guard Dogs excel at sniffing out strong-smelling contraband items like Drugs and Alcohol, and can also detect escape tunnels hidden underground.\n\n
+buildtoolbar_popup_help_doghandler_2        ~With a Dog Handler selected, you can order them to move anywhere in your prison by Right Clicking that location.\n\n
+buildtoolbar_popup_help_doghandler_3        ^Tips
+buildtoolbar_popup_help_doghandler_4        - Sending a Dog Handler into an area will cause the Guard Dog to try and sniff out any contraband that might be hidden nearby.
+buildtoolbar_popup_help_doghandler_5        - When walking over an underground escape tunnel, a Guard Dog might give a signal indicating it's there. A small marker will be left behind to show this. Sometimes, however, the Dog might signal when there's nothing there...
+buildtoolbar_popup_help_doghandler_6        - If a Dog Handler is killed, their Guard Dog might go berserk and try to kill their Handler's murderer before leaving the prison.
+
+buildtoolbar_popup_help_sniper_1            Snipers station themselves in the Guard Towers you build around the prison, providing a strong deterrent against prisoners causing trouble, and acting as a last line against escaping prisoners.\n\n
+buildtoolbar_popup_help_sniper_2            ^Tips
+buildtoolbar_popup_help_sniper_3            - Snipers have a powerful, long range rifle, but can only cover areas in their direct line of sight. 
+buildtoolbar_popup_help_sniper_4            - Snipers will fire warning shots at prisoners misbehaving inside the prison grounds. If the prisoners don't surrender, they will start firing at the prisoners directly.
+buildtoolbar_popup_help_sniper_5            - If Freefire is activated, or a prisoner is outside the prison and escaping, no warning shots will be fired.
+
+buildtoolbar_popup_help_chief_1             The Chief is the head of security in your prison. He gives you an overall readout of the mood in your prison, showing the likelihood of prisoners causing trouble, and also lets you keep track of how many guards are currently busy within your prison. He also allows you to research more advanced security features such as Guard Dogs or CCTV Cameras. Once Given an office, they mostly manage themselves.
+
+buildtoolbar_popup_help_foreman_1           The Foreman is the head of maintenance and construction in your prison, allowing you to research and hire Janitors and Gardeners. He also deals with Prison Labour, and personally oversees the training of Prisoners in the use of Workshop tools.\n\n
+buildtoolbar_popup_help_foreman_2           ^Tips
+buildtoolbar_popup_help_foreman_3           - Once you have built a Workshop in your Prison, the Foreman will be responsible for teaching the Workshop Safety Induction programs, which can be scheduled in the Programs tab of your reports window.
+
+buildtoolbar_popup_help_psychologist_1      The Psychologist is responsible for monitoring the mental health of your Prisoners. Having a Psychologist will let you see the current needs of your prisoners, and they are also responsible for running a few reform programs for Prisoners.\n\n
+buildtoolbar_popup_help_psychologist_2      ^Tips
+buildtoolbar_popup_help_psychologist_3      - With a Psychologist in your prison, you can see individual prisoners needs by highlighting them, or all of your prisoners needs collectively in the Needs tab of your Report window.
+buildtoolbar_popup_help_psychologist_4      - Psychologists run the AA Programs for treating alcohol addiction in your prison, and also Behavioural Therapy programs to try and manage your more troublesome prisoners. As such, having multiple Psychologists in your prison is a valid option, should you feel you need them.
+
+buildtoolbar_popup_help_accountant_1        The Accountant manages the finances of your prison, and unlock the ability to see the cash flow and total value of your prison as well as some research items for improving your income. Once given an Office, they largely manage themselves.
+
+buildtoolbar_popup_help_lawyer_1            The Lawyer helps you get around certain laws that might be troublesome in the running of your prison, and can help you avoid legal liability for any particularly disastrous things that might happen in your prison. They can also unlock the Death Row option for your Prison. Once given an office, they will manage themselves.
+
+buildtoolbar_popup_help_gangs_1             The Gangs view shows you the current status of any Gangs in your prison. You can see information on each individual gang, as well as which rooms are owned by gangs and which prisoners are gang members. You can also see which gang members are Gang Lieutenants, highlighted by 2 circles, and Gang Leaders, highlighted by 3 circles.\n\n
+buildtoolbar_popup_help_gangs_2             ~If you want to forcibly remove gangs from an area they control, highlight the room and click the Evict button that appears. The gang won't be happy about this, though...\n\n
+buildtoolbar_popup_help_gangs_3             ^Tips
+buildtoolbar_popup_help_gangs_4             - You will be unable to change areas of the prison that Gangs control. If you want to add or remove anything in those areas, you will have to reclaim them first.
+buildtoolbar_popup_help_gangs_5             - Non-gang members will be charged for using the facilities in areas of the prison that a Gang controls. Rival Gang members will avoid those areas completely.
+buildtoolbar_popup_help_gangs_6             - You can use Security rooms to help maintain your influence over an area. Any Guards in a Security Office that is adjacent to a potential Gang area will count towards your control.
+buildtoolbar_popup_help_gangs_7             - Gang members are very protective of their gang leader. They won't like it if anything happens to them...
+
+buildtoolbar_popup_help_weathermap_1        The Temperature view shows you the temperature across the various areas of your prison. Temperature can be increased primarily using Radiators. If an area is too cold, the Warmth need of any prisoners there will go up.
+
+buildtoolbar_popup_help_prefabs_1           The Quick Build menu contains options that help you speed up the construction of rooms that you use a lot. The Clone tool lets you select an area of your prison to copy, and then place that area again. The Pre-fab rooms let you place premade rooms that will automatically meet their requirements.\n\n
+buildtoolbar_popup_help_prefabs_2           ~With the Clone tool selected, hold the Right Mouse button and drag an area that you want to copy. Then, Left Click somewhere else in the prison to queue up construction of a copy of that area.\n
+buildtoolbar_popup_help_prefabs_3           ~With a Prefab tool selected, simply Left Click the area of your prison that you want to build the room, and it will be built by your Workmen.\n\n
+buildtoolbar_popup_help_prefabs_4           ^Tips
+buildtoolbar_popup_help_prefabs_5           - The Clone tool does not copy Utility connections. You will have to connect power and water up to your newly created areas manually.
+
+buildtoolbar_popup_help_zoning_1        The Zoning tools let you control which prisoners are allowed into which areas of your prison, with Shared and Unlocked being open to all prisoner categories.\n\n
+buildtoolbar_popup_help_zoning_2        ~Select the category you want to assign to a zone, and Left Click the zone. Right Clicking will reset the zone to Shared.\n\n
+buildtoolbar_popup_help_zoning_3        ^Tips
+buildtoolbar_popup_help_zoning_4        - Since no prisoners are allowed to enter Staff-Only areas, this allows you to create "airlocks" that can keep prisoners in certain areas from accessing otherwise shared facilities. This can be especially useful if, for example, you wanted to keep all of your protected custody prisoners inside their own area, away from a shared Yard or Common Room.
+buildtoolbar_popup_help_zoning_5        - If a zone is set to Unlocked, all doors in that area will be locked open. 
+
+buildtoolbar_popup_help_guards_1        The Guards tool lets you station Guards in zones. A stationed guard will move around their assigned zone randomly, and will perform any Guard tasks in that area, such as opening doors.\n\n
+buildtoolbar_popup_help_guards_2        ~Left Click to increase the number of Guards deployed to a zone. Right Click to remove a Guard.\n\n
+buildtoolbar_popup_help_guards_3        ^Tips
+buildtoolbar_popup_help_guards_4        - If you have Micromanagement unlocked, you will have access to the Deployment Scheduler. This lets you create a timetable of when guards are assigned to certain areas. For example, if you only wanted Guards deployed in the Canteen during the Eat regime, you could click each block of the Scheduler that lines up with your Eat regime, then move the time slider into that block and click your Canteen to assign guards.
+buildtoolbar_popup_help_guards_5        - You have up to 7 different time blocks available for Scheduling, plus the default Always-active mode, allowing you to create complex deployment routines that match the needs of your prison. 
+buildtoolbar_popup_help_guards_6        - If you don't manually select a time block when assigning Guards, the Scheduler will use the current time; make sure you have the correct time selected when changing your Deployment!
+
+buildtoolbar_popup_help_patrols_title   Patrols
+buildtoolbar_popup_help_patrols_1       The 3 Patrol tools let you create specific routes you want to be patrolled, and then assign either regular Guards, Dog Handlers or Armed guards (or a combination of all 3) to patrol them. These patrols can cross over multiple zones.\n\n
+buildtoolbar_popup_help_patrols_2       ~Hold the Left Mouse Button and drag to create patrol routes, and Left Click on an existing patrol route to add a Guard to that patrol. Right Click a Guard on a patrol to remove it, or hold the Right Mouse Button and drag to remove the patrol entirely.\n\n
+buildtoolbar_popup_help_patrols_3       ^Tips
+buildtoolbar_popup_help_patrols_4       - Regular Guards on patrol will continue to perform Guard duties such as opening doors or searching Prisoners. Dog Handlers and Armed Guards will not. 
+buildtoolbar_popup_help_patrols_5       - If you have unlocked Micromanagement, you will have access to the Deployment Scheduler, which works for Patrols in the same way as it does regular Guard Deployment.
+
+buildtoolbar_popup_help_accessonly_1	The Access-Only tool allows you to mark areas of your prison that should generally be avoided when moving around the prison. It lets you stop people using rooms as shortcuts through the prison, if you would prefer they take a different route.\n\n
+buildtoolbar_popup_help_accessonly_2	~Left click the zone you want to mark as Access-Only. This can be done in addition to normal security settings.
+buildtoolbar_popup_help_accessonly_3	~Right click the zone to remove the Access-Only setting.\n\n
+buildtoolbar_popup_help_accessonly_4	^Tips
+buildtoolbar_popup_help_accessonly_5	- Access-Only is not a strict setting. It does not explicitly prevent people from entering, especially if their target is inside the marked area. If passing through an Access-Only area is significantly shorter than an alternative (for example, navigating around the entire of the prison), people may still pass through Access-Only zones. 
 
 job_matsassigned                        Materials Assigned
 job_matsavailable                       Materials Available
 job_awaitingmaterials                   Awaiting Materials
-job_inprogress                          Job In Progress
-job_blocked                             Job (Blocked)
-job_queued                              Job (Queued)
+job_inprogress                          -In Progress-
+job_blocked                             -Blocked-
+job_queued                              -Queued-
 
 job_failed_noroute                      No Route
 job_failed_nomaterials                  No Materials
 job_failed_toodangerous                 Too Dangerous
 job_failed_materialsbeingcarried        Materials On Route
 
-job_rightclicktocancel                  Right Click to Cancel
-job_refundamount                        Refund Amount: *X
+job_rightclicktocancel                  - Right Click to Cancel
+job_ftofollow							- Press F to follow
+job_makehighpriority					- Ctrl + Left Click to make High Priority
+job_removehighpriority					- Ctrl + Right Click to remove High Priority
+job_makehighpriority_mac				- Alt + Left Click to make High Priority
+job_removehighpriority_mac				- Alt + Right Click to remove High Priority
+job_highpriority_tooltip				- URGENT
+job_refundamount                        - Refund Amount: *X
 
 failuremessage_blocked                  Blocked
 failuremessage_cantafford               Insufficient Funds
@@ -661,6 +871,18 @@ codex_termsconditions                   Terms and Conditions
 codex_twitter                           Twitter
 codex_extras                            Extras
 codex_unlocked                          Unlocked *X/*Y
+codex_mapsettings                       Map Settings
+codex_othergames						Other Introversion Games
+codex_mutators                          Mutators
+
+codex_cloudsavedesc                     Save to the Cloud
+codex_cloud_enabled						New saves will be stored in the cloud.
+codex_cloud_notaccount					Steam Cloud is disabled in the Steam client. Please re-enable it to use this feature.
+codex_cloud_notapp						New saves will be stored on your hard drive.
+codex_saveload_delete					Delete
+
+codex_load_failed_title                 Load Prison.
+codex_load_failed_message               Cannot load this prison file because it is corrupt.
 
 codex_new                               Create New Prison
 codex_new_worldsize                     World Size
@@ -694,20 +916,41 @@ codex_options_clocktype_analogue        Analogue
 codex_options_clocktype_12h             12 Hour
 codex_options_clocktype_24h             24 Hour
 
+codex_options_directions				Floor Signage Display
+codex_options_dirrender_hidden			Hidden
+codex_options_dirrender_visible			Visible
+codex_options_dirrender_zoom			Zoom
+
+codex_options_tempscale                 Display Temperature in Celsius
+
 codex_options_gameplay					Game
 codex_options_autosave					Autosave Timer
 codex_options_renderrooms				Room Checkerbox
 codex_options_apply						Apply
+codex_options_v2gui						Version 2.0 GUI
+codex_options_zoomtomouse				Zoom To Mouse
+codex_options_oneclickrapsheet			One Click Rapsheet
+codex_options_disableanalytics			Disable Analytics
+codex_tooltip_disableanalytics          We collect anonymised statistics to help improve the game experience. The data we collect is viewable in metrics.txt
 
 codex_options_language					Language
 
 codex_options_experimental              Experimental
 codex_options_enablevbo                 Enable Vertex Buffer Objects
+codex_options_disableattract            Disable Startup Attract Screen
+
+codex_nitgs_authwarning                 Important: If you have recently changed your Name in the Game entry, it will need to be authorised before it will appear in the list.
 
 codex_nitgs_filtercaption               Filter
 codex_nitgs_filterall                   All
 codex_nitgs_filtermen                   Men
 codex_nitgs_filterwomen                 Women
+
+codex_nitgs_checkingforupdate           Checking for update...
+codex_nitgs_updateavailable             Update available
+codex_nitgs_downloading                 Downloading update...
+codex_nitgs_downloadcomplete            Download complete.
+codex_nitgs_downloadfailed              Download failed.
 
 codex_enabled                           Enabled
 codex_disabled                          Disabled
@@ -730,6 +973,18 @@ codex_option_gangs                      Gangs
 codex_tooltip_gangs                     Some prisoners will arrive with gang allegiences, and will attack rival gang members on site. Extra challenge.
 codex_option_events                     Events
 codex_tooltip_events                    Causes events to occur during the game to keep you on your toes. Adds extra challenge and an element of unpredictability. 
+codex_option_weather                    Weather and Temperature
+codex_tooltip_weather                   Adds changing weather and varying temperatures to your prison, requiring you to think about heating.
+codex_option_enablecheats				Enable Tools and Cheats
+codex_tooltip_enablecheats				Enables developer tools and cheats in this prison. If selected, this can not be disabled, achievements are not awarded, and you will not be able to sell this prison.
+codex_option_staffneeds                 Staff Needs 
+codex_tooltip_staffneeds                Enable Needs for your Guards, meaning they will require food, rest and other comforts in order to do their jobs properly. 
+codex_option_escapeplans                Escape Plans
+codex_tooltip_escapeplans               Enables more escape options for prisoners. They will now attempt to climb over your walls when trying to escape.
+codex_option_wardenmode                 Warden Mode
+codex_tooltip_wardenmode                Play as the warden working on site of the prison you are building.
+codex_option_wardenmode_permadeath      Permadeath
+codex_tooltip_wardenmode_permadeath     If you die as the Warden it's Game Over!
 
 codex_option_funds                      Funds
 codex_tooltip_funds                     You will start with this much money in your bank account. Sell your established prisons from the Valuation screen to start with more funds.
@@ -768,12 +1023,13 @@ codex_workshop_generic_fail				Failed to publish your prison. Please try again.
 codex_workshop_download_bad				Failed To Download Prison
 codex_workshop_pa_workshop				Open Prison Architect Workshop
 codex_workshop_agreement				By submitting this item, you agree to the [url=http://steamcommunity.com/sharedfiles/workshoplegalagreement]workshop terms of service[/url].
+codex_workshop_update_warning			Updating Published Prison
+codex_workshop_update_warning_msg		Updating this Published Prison will override the published prison with the currently loaded prison. This will delete the published prison, permanently replacing it with the prison you are currently playing. This action can not be undone.\n\nAre you sure you wish to proceed?
 
 codex_options_timelapse					Time Lapse
 codex_timelapse_record					Record Time Lapse
 codex_timelapse_stop					Stop Time Lapse
 codex_timelapse_camera					Camera Mode
-codex_timelapse_resolution				Resolution
 codex_timelapse_customresw				Custom Res Width
 codex_timelapse_customresh				Custom Res Height
 codex_timelapse_resolution				Resolution
@@ -851,6 +1107,7 @@ codex_polaroids_new                     NEW
 
 codex_save_confirm                      Are you sure you wish to overwrite *X with the current prison?
 codex_researtchapter_confirm            Are you sure you wish to restart the current chapter? Unsaved progress will be lost.
+codex_delete_confirm                    Are you sure you wish to permanently delete *X?
 
 codex_premadeprisons                    Premade Prisons
 
@@ -864,6 +1121,29 @@ codex_trending_oneyear                  One Year
 codex_trending_alltime                  All Time
 codex_trending_failedtogetlist          Failed to get prison list
 codex_trending_failedtogetlist_msg      Failed to get the list of trending prisons.
+
+codex_settings                          Map Settings
+codex_settings_gangs                    Enable Gangs
+codex_settings_events                   Enable Events
+codex_settings_weather                  Enable Weather
+codex_settings_staffneeds               Enable Staff Needs
+codex_settings_escapeplans              Enable Escape Plans
+codex_settings_failureconditions        Enable Failure Conditions
+codex_settings_confirm                  Once enabled, this setting cannot be deactivated. Are you sure you wish to enable *X?
+
+codex_packrects							Pack Rectangles
+codex_addboxbutton						Add New Rectangle
+codex_setsize							Set Space Size
+codex_removeallrects					Remove All Rects
+codex_packrects_widthcaption			Space Width
+codex_packrects_heightcaption			Space Height
+codex_packrects_boxwcaption				Rect Width
+codex_packrects_boxhcaption				Rect Height
+
+mods_downscaled_spritesheet				Sprite Sheet Downscaled
+mods_downscaled_spritesheet_msg			The sprite sheet has had to be downscaled due to your graphics card limitations. This is probably a result of activating a lot of mods. Please disable some mods in order to improve quality.
+mods_errors_no_memory					No Mod Sprites Loaded
+mods_errors_no_memory_msg				There is insufficient graphics memory to load additional mod sprites. This is probably a result of activating a lot of mods. Please disable some mods in order to use less memory.
 
 # =============================================================================
 # Graphics Change Confirmation
@@ -879,6 +1159,8 @@ graphicschange_revert					Revert
 # =============================================================================
 
 scriptdebugger_title                    Script Debugger (F3)
+script_error_critical                   Something went wrong.
+script_error_critical_msg               Something went wrong while executing a game script.\n\nIf you are running a mod please let the mod authors know. Otherwise please file a bug report including your debug.txt.
 
 # =============================================================================
 # Mod Confirmation
@@ -990,6 +1272,13 @@ punish_active                           ACTIVE
 punish_permanent                        (Permanent)
 punish_end                              End Punishment
 
+punish_up								Up
+punish_down								Down
+punish_setmin							Min
+punish_setmed							Med
+punish_setmax							Max
+punish_setsuper							Super
+
 # =============================================================================
 # Misconducts
 # =============================================================================
@@ -1008,6 +1297,7 @@ misconduct_reporttype_contrabandnarcotics   Found Drugs
 misconduct_reporttype_contrabandluxuries    Found Luxuries
 misconduct_reporttype_intoxicated           Intoxication
 misconduct_title                            =[Misconduct]=
+misconduct_totalitems						(Plus *X more)
 
 misconduct_report_addiction                 Addicted to *X
 misconduct_report_recoving                  Recovering from *X addiction
@@ -1063,7 +1353,7 @@ research_advancedmanagement             Micromanagement
 research_deathrow                       Death Row
 research_permanentpunishment            Permanent Punishments
 research_removemincellsize              Small Cells
-research_reduceexecutionliability       Reduce Execution Liability
+research_reduceexecutionliability       Execution Liability
 research_legalprep                      Legal Prep
 research_legaldefense                   Legal Defense
 research_guardtowers                    Guard Towers
@@ -1132,7 +1422,7 @@ requirement_entrance                    Requires Entrance
 roomrequirement_title                   =[Room Requirements]=
 roomrequirement_passed                  [PASSED] 
 roomrequirement_failed                  [FAILED] 
-roomrequirement_adjacentobject          Adjacent to Room: 
+roomrequirement_adjacentobject          Adjacent to Room: *X
 
 # =============================================================================
 # Unlocks
@@ -1221,6 +1511,7 @@ report_staff_group_builders             Workers
 report_staff_group_guards               Guards
 report_staff_group_staff                Staff
 report_staff_group_administrators       Administrators
+report_staff_group_otherstaff           Other
 report_staff_group_prisoners            Prisoners
 report_staff_group_prisoners_high       High Risk
 report_staff_group_prisoners_normal     Normal Risk
@@ -1279,6 +1570,9 @@ report_intake_buttons_tooltip           You can increase or decrease the number 
 report_intake_overview_tooltip_title    Intake Overview
 report_intake_overview_tooltip          Here you can view your next prisoner delivery, and the payment you will receive. The number of prisoners being delivered, and their category, can be changed with the sliders and buttons above. The payment is based on the number of prisoners in each category.
 
+report_needs_prisoners                  Prisoner Needs
+report_needs_staff                      Staff Needs
+
 valuation_categoryprison                Prison Value
 valuation_construction                  Bricks and Mortar
 valuation_objects                       Fixtures and Fittings
@@ -1327,11 +1621,25 @@ policy_search                           - SEARCH -
 policy_prisoner                         HIM
 policy_prisoner_f                       HER
 policy_cell                             CELL
+policy_security							SEC
 policy_punishment                       PUNISHMENT
 policy_quantity                         TIME
 policy_punishmenttime                   *X hrs
 policy_mealcost                         $*X / day
 policy_totalmealcost                    (TOTAL: $*X / day)
+policy_cell_quality						Use Cell quality ratings
+policy_cell_quality_tooltip_title		Use Cell Quality
+policy_cell_quality_tooltip				If enabled, Prisoners will only be assigned to a cell of a quality they deserve, based on their behaviour. Poorly behaved prisoners will never be assigned to a high quality cell, even if there are no other cells available.\nIf disabled, prisoners will be assigned to any cell regardless of quality, but prisoners in cells of lower quality than average will be more resentful. Prisoners will still be upgraded to higher quality cells if they behave well.
+policy_staffbreak_length                Staff Break Length: *P mins
+policy_staffbreak_num                   Num Staff Breaks: *P
+policy_staffbreakmax					Max Staff Taking Break: *P%
+policy_staffbreakmax_title				Max Staff Taking Break
+policy_staffbreakmax_info				The maximum percentage of your staff who are permitted to take a break at any one time. Set this low to force your staff to work harder and longer without breaks. Set it high to allow guards to take breaks whenever they please.
+reports_staffpaytitle					Staff Pay
+reports_payup							Pay Raise 10%
+reports_paydown							Pay Cut 10%
+reports_payrisepercent					Total Pay Rise: *X%
+reports_perday							Per day
 
 job_construct                           Construct *X
 job_installobject                       Install *X
@@ -1351,6 +1659,7 @@ job_searchentity                        Search Prisoner
 job_searchingentity						Searching Prisoner
 job_searchcell                          Search Cell
 job_searchcellblock                     Search Cell Block
+job_searchtoilets                       Search Toilets
 job_improvecellindoor                   Clean indoor area
 job_improvecelloutdoor                  Garden outdoor area
 job_opendoor                            Open Locked Door
@@ -1377,9 +1686,11 @@ finances_category_workmen               Workmen Wages
 finances_category_guards                Guard Wages
 finances_category_admin                 Administrator Wages
 finances_category_staff                 Staff Wages
-finances_category_food                  Food
+finances_category_food                  Prisoner Food
+finances_category_stafffood             Staff Food
 finances_category_electricity           Electricity
 finances_category_workshops             Workshops
+finances_category_upkeep				Upkeep
 finances_category_loaninterest          Loan Interest
 finances_category_reformprogs           Reform Programs
 finances_category_noincident            Days Without Incident
@@ -1394,11 +1705,14 @@ meal_variety                            Meal Variety
 meal_cost                               Cost Per Prisoner
 
 reports_paroletitle                     Parole Policy
+reports_otherpolicytitle				Other policies
 parole_title                            Parole Release Rate
 parole_info                             Parole Cutoff: *P%
 parole_desc                             If a prisoner has a reoffending rate less than this value, they will be released at the end of their parole hearing.
 parole_fine                             Prisoner Reoffending Fine
 parole_reward                           Early Release Prisoner Reward
+
+reports_staffbreaktitle                 Staff Breaks Policy
 
 victory_title                           CERTIFICATION
 
@@ -1420,16 +1734,26 @@ victory_escapes                         ESCAPES
 victory_counter                         (*X today)
 victory_executions                      Illegal Executions
 victory_innocentsexecuted               Innocent Prisoner Executed
+victory_staffdeaths						Staff Fatalities
+victory_staffpayrise                    Staff Unhappy
+victory_staffstrike                     Staff On Strike
 
 victory_warning_bankrupt                You have 24 hours to avert financial disaster.
 victory_warning_riot                    End this riot soon, or our government will be forced to assume control.
 victory_warning_toomanydeaths           You face prosecution if too many more deaths occur today.
 victory_warning_toomanyescapes          You will be fired if too many more escapes occur today.
+victory_warning_executions				You will be fired if another innocent prisoner is executed.
+victory_warning_staffpayrise            Your staff will go on strike if their pay isn't increased.
+victory_warning_staffstrike             Your staff are on strike!            
+victory_warning_staffonstrike           The staff have gone on strike - we've lost about 90% of our guard force! If we don't increase their pay with a day, lots of them are threatening to quit entirely.
 
 victory_prisoners_units                 Places
 victory_prisonersreleased_units         Released
 victory_toomanydeaths_units             Deaths
 victory_toomanyescapes_units            Escapes
+victory_executions_units				Innocent Executions
+victory_staffpay_units                  Offered Increase
+
 victory_prisonersparoled                Prisoners Paroled
 victory_prisonersreoffended             Reoffended Prisoners
 
@@ -1457,6 +1781,8 @@ victory_adviserwarning_executions1      This is the second time that you have pu
 victory_adviserwarning_executions2      If another innocent prisoner is executed, you will be held responsible.
 victory_advisernotice_executions1       You have allowed too many innocent people to be executed. We can not longer allow you to run this prison. You have failed.
 victory_advisernotice_InnocentsExecuted1 You've just executed someone without following the proper procedure, and it turns out they were innocent. This is a gross  miscarriage of justice, and you are responsible. You're fired, and will probably be jailed yourself.
+victory_adviserwarning_staffpayrise1    Our staff have become unhappy with their working conditions in the prison and have threatened to go on strike if they don't get a 50% pay rise.
+victory_adviserwarning_staffstrike1     Our staff have gone on strike! They will still be willing to return if they get their 50% pay rise.
 
 score_title                             PRISON GRADING
 score_reoffendingrate                   REOFFENDING RATE
@@ -1511,11 +1837,16 @@ experiencefactor_gangmembership         Gang Member
 legend_key                              Key:
 
 needs_graphscale_title                  Prisoners:
+needs_graphscale_title_staff            Staff:
 needs_key_critical                      Critical
 needs_key_high                          High
 needs_key_med                           Medium
 needs_key_satisfied                     Satisfied
 needs_key_active                        Active
+
+needs_show_category                     Prisoner Category
+needs_show_category_staff               Staff Category
+needs_show_category_all                 All Prisoners
 
 contraband_supplyanddemand              Supply and Demand
 contraband_narcotics                    Narcotics
@@ -1597,6 +1928,13 @@ action_changeclothes                    Changing Clothes
 action_getbook                          Get Book
 action_pray                             Praying
 action_shopping                         Shopping
+action_playinggame                      Playing Game
+
+action_foodpoisoning_1                  Oh god make it stop
+action_foodpoisoning_2                  Everything is coming out
+action_foodpoisoning_3                  Vomiting everywhere
+action_foodpoisoning_4                  Why is this happening
+action_foodpoisoning_5                  Literally dying
 
 status_effect_title						=[Status Effects]=
 status_effect_none						None
@@ -1614,7 +1952,9 @@ status_effect_wounded                   Bleeding
 status_effect_virus                     Sick
 status_effect_virusdeadly               Sick
 status_effect_overheating               Overheating
-status_effect_frigid                    Frigid
+status_effect_exposure                  Exposure
+status_effect_foodpoisoning             Food Poisoning
+status_effect_riledup                   Riled Up
 
 condition_treated                       Treated
 condition_needstreating                 Needs Treating
@@ -1657,12 +1997,67 @@ need_name_drugs                         Drugs
 need_name_alcohol                       Alcohol
 need_name_starving                      Starving
 need_name_spirituality                  Spirituality
-need_name_literacy                      Literacy
+need_name_literacy                      Literature
 need_name_babysleep                     [Baby] Sleep
 need_name_babyplay                      [Baby] Play
 need_name_warmth                        Warmth
+need_name_staffbladder                  Bladder
+need_name_staffbowels                   Bowels
+need_name_stafffood                     Food 
+need_name_staffsafety                   Safety
+need_name_staffrecreation               Recreation
+need_name_staffcomfort                  Comfort
+need_name_staffenvironment              Environment
+need_name_staffrest                     Rest
+need_name_staffwarmth                   Warmth
+need_name_luxuries                      Luxuries
 needs_locked                            (Psychologist Required To Show Needs)
 needs_title                             =[Needs]=
+
+needs_total_prisoners                   *X Prisoners have this need
+needs_total_concerned                   *X Prisoners are concerned about this need
+needs_total_desperate                   *X Prisoners desperately want this need fulfilled
+needs_total_angry                       *X Prisoners are furious that they can't meet this need
+needs_total_active                      *X Prisoners are currently dealing with this need
+
+needs_total_staff                       *X Staff have this need
+needs_total_concerned_staff             *X Staff are concerned about this need
+needs_total_desperate_staff             *X Staff desperately want this need fulfilled
+needs_total_angry_staff                 *X Staff are furious that they can't meet this need
+needs_total_active_staff                *X Staff are currently dealing with this need
+
+needs_help_bladder                      Everyone needs to use the toilet, even prisoners. Don't forget that most parts of your prison Regime are pretty strict - they can't use the toilet in their cell if they are supposed to be in the shower room, for example.
+needs_help_bowels                       Everyone needs to use the toilet, even prisoners. Don't forget that most parts of your prison Regime are pretty strict - they can't use the toilet in their cell if they are supposed to be in the shower room, for example.
+needs_help_sleep                        Prisoners require sleep. Prisoners will only be able to sleep in the cell to which they are assigned, and will only sleep between 8pm and 8am. They'll obviously need a bed, too.
+needs_help_food                         Everyone needs to eat, and most people need to eat more than once per day. If you find that your Kitchens aren't able to keep up with the demand, try hiring more Cooks or adding more Cookers to your Kitchens. You can also tweak your food policies in the Policies tab of your Report window.
+needs_help_safety                       Even in prison, your Prisoners want to feel safe. If there are lots of fights in your prison or the overall danger level is high, prisoners will feel less safe, and may consider arming themselves. If this is becoming a problem, trying increasing the security throughout your prison by hiring more Guards, creating more patrols, or by seeing to the other needs of your Prisoners.
+needs_help_hygiene                      Most Prisoners will want to wash regularly, especially in the mornings after they wake up. The Shower regime will force prisoners who don't have their own personal Shower to go to the nearest Shower room. If this is becoming a problem, consider expanding your Shower facilities, or adding more Freetime so Prisoners can shower as they need to.
+needs_help_exercise                     Many prisoners will want to be able to keep in shape. You can help them do this by adding a Yard to your prison. Weights Benches, either in the Yard or other common areas, will also help with this.
+needs_help_recreation                   A bored Prisoner is a dangerous Prisoner. You can see to a Prisoners need for Recreation by adding pass-times to the common areas of your prison, such as TVs or Radios.
+needs_help_comfort                      Prisoners generally want to feel comfortable, physically and emotionally. There are many ways you can aid this, such as allowing for family visitations, giving them hot showers or simply making sure they have somewhere to sit.
+needs_help_environment                  Prisoners hate living in dirty conditions, and with a lot of Prisoners using the same facilities, things can get messy pretty quickly. Hire some Janitors or put your Prisoners to work in a Cleaning Cupboard to keep on top of this.
+needs_help_privacy                      Sometimes Prisoners will want some time to themselves. Spending time in their cell will usually see to this, but if they are living in a Dormitory with a lot of other prisoners, they might not find much Privacy there.
+needs_help_freedom                      Even in prison, your Prisoners will want to feel as if they have some level of Freedom. You can facilitate this by adding some Freetime or Yard time to your Regime.
+needs_help_clothing                     Prisoners are going to want clean clothes from time to time, even if it is just the same coloured jumpsuit. Adding a Laundry to your prison and either hiring Janitors or putting Prisoners to work in it will help make this dream a reality.
+needs_help_drugs                        Many prisoners have problems with drug addiction - it might even be why they are in prison in the first place. You can help treat this problem by running a Drug Treatment Program in your Infirmary. 
+needs_help_alcohol                      Many prisoners struggle with alcoholism, and will go to great lengths to get their hands on some alcohol. You can try to help alleviate this by running Alcoholic Group Therapy sessions.
+needs_help_spirituality                 Lots of prisoners have various religious beliefs. You can enable your prisoners' practice of these beliefs by adding Pews or Prayer Mats to your prison, but building a Chapel and running Spiritual Guidance programs will give the best results and generally help calm your prisoners too.
+needs_help_literacy                     Some prisoners just want to read. Adding a Library will let those Prisoners borrow books to meet this need.
+needs_help_warmth                       No one wants to be cold all the time, but nature doesn't really care about that. Adding radiators to your prison will keep your buildings warm enough to stop this becoming a problem. 
+needs_help_babysleep                    Babies need to sleep more than regular prisoners. If any of your Prisoners have a Baby, make sure you have Cots available so that the Baby can sleep as needed.
+needs_help_babyplay                     Babies need engagement and entertainment. If any of your Prisoners have a Baby, make sure you have Play Mats in an accessible area.
+needs_help_family                       Most Prisoners want to keep in contact with their families in one way or another. The easiest way to let them do this is to add Phones to your prison, though adding a Visitation facility to your prison will be much more effective. A Mail Room can also help with this need.
+needs_help_luxuries                     Many Prisoners enjoy a bit of luxury from time to time. You can help them meet this need by building a Shop in your prison, and make a bit of money in the process. Prisoners who meet this need will be less likely to cause trouble, but there's no downside for ignoring it; it IS prison, after all.
+
+needs_help_staffbladder                 Even your Staff will need to use the toilet occassionally. They will do so whenever they are on break.
+needs_help_staffbowels                  Even your Staff will need to use the toilet occassionally. They will do so whenever they are on break.
+needs_help_stafffood                    Staff need to eat, and will do so in Staff-only Canteens or Staffrooms. Food will be delivered for your staff so that they don't have to eat the same slop as the prisoners.
+needs_help_staffsafety                  Even working in a prison, your staff have a right to safety. High danger levels or constant fights will make your staff feel unsafe, though this can be countered somewhat by having better equipped guards.
+needs_help_staffrecreation              Your staff spend a lot of time in your prison and will need some entertainment from time to time. TVs or a Radio in the Staffroom are one way to provide this.
+needs_help_staffcomfort                 Most of your staff spend the entire day on their feet; occassionally they will want to relax. Giving them somewhere nice to sit while they are on their breaks is a good way to relieve this.
+needs_help_staffenvironment             Staff don't want to work in a messy prison anymore than prisoners want to live there. Keeping the prison clean will prevent this from being a problem.
+needs_help_staffrest                    Staff need to take breaks during the day, and regain their energy. They prefer to rest in a private staff room with some comfy sofas.
+needs_help_staffwarmth                  Staff need to stay warm, add radiators to your prison to make them more comfortable.
 
 reputation_title                        Reputation
 reputation_hidden                       (Unknown Reputation)
@@ -1683,6 +2078,14 @@ reputation_instigator                   Instigator
 reputation_fighter                      Skilled Fighter
 reputation_gangmember                   Gang Member
 reputation_federalwitness               Federal Witness
+reputation_preacher                     Preacher
+reputation_connected                    Connected
+reputation_workaholic                   Workaholic
+reputation_clean                        Clean
+reputation_pickpocket                   Pick Pocket
+reputation_copycat                      Identity Thief
+reputation_dangerous                    Dangerous
+reputation_escapeartist                 Escape Artist
 
 reputation_strong_high                  Extremely Strong
 reputation_tough_high                   Extremely Tough
@@ -1691,6 +2094,8 @@ reputation_deadly_high                  Extremely Deadly
 reputation_exlaw_high                   Ex Prison Guard
 reputation_quick_high                   Extremely Quick
 reputation_fighter_high                 Expert Fighter
+reputation_connected_high               Well Connected
+reputation_dangerous_high               Extremely Dangerous
 
 reputation_legendary_high               --LEGENDARY--
 reputation_snitch_high                  Snitch
@@ -1699,6 +2104,13 @@ reputation_fearless_high                Fearless
 reputation_copkiller_high               Cop Killer
 reputation_instigator_high              Instigator
 reputation_gangmember_high              Gang Member
+reputation_federalwitness_high			Federal Witness
+reputation_preacher_high                Preacher
+reputation_workaholic_high              Workaholic
+reputation_clean_high                   Clean
+reputation_pickpocket_high              Pick Pocket
+reputation_copycat_high                 Identity Thief
+reputation_escapeartist_high            Escape Artist
 
 reputationtooltip_legendary             This prisoner is a legend of the criminal underworld, and has numerous skills and abilities that make them very dangerous.
 reputationtooltip_strong                This prisoner hits harder with each punch during fights.
@@ -1715,7 +2127,14 @@ reputationtooltip_instigator            This prisoner sows seeds of discontent i
 reputationtooltip_fighter               This prisoner is skilled in defensive combat moves. They can disarm their opponent, or even take their weapon from them in a fight.
 reputationtooltip_gangmember            This prisoner belongs to a gang. They will defend their fellow gang members and will harbour hatred towards rival gangs.
 reputationtooltip_federalwitness        This prisoner is a witness in an important legal case, and as such as been targeted for death by a gang or crime boss.
-
+reputationtooltip_preacher              This prisoner is extremely charismatic and is able to convert others to their religion, giving them the Spirituality need.
+reputationtooltip_connected             This prisoner has connections everywhere, inside the prison and out. They are able to produce contraband seemingly out of nowhere.
+reputationtooltip_workaholic            This prisoner is compelled to work, and won't stop once they have started until there is nothing left to do, ignoring the regime and even their basic needs.
+reputationtooltip_clean                 This prisoner is obsessed with being clean; as a result, their need for hygiene will go up at a much higher rate.
+reputationtooltip_pickpocket            This prisoner is quick fingered, and will frequently attempt to steal from whoever has the misfortune of being nearby.
+reputationtooltip_copycat               This prisoner is able to copy the behaviours and actions of nearby prisoners, duplicating their reputations.
+reputationtooltip_dangerous             This prisoner causes damage to other people nearby. How? Why? Who can say.
+reputationtooltip_escapeartist          This prisoner is a professional escape artist, and breaks out of things for fun. Constantly trying to lift jail keys and then break out.
 
 # =============================================================================
 # Nameplate status
@@ -1764,6 +2183,10 @@ objective_intake_typefillcapacity       Fill to capacity
 objective_intake_typetotalprisoners     Fill to *X
 objective_intake_typenumperday          *X per day
 objective_intake_typeallavailable       All available
+objective_intake_closedstrike           Intake unavailable during staff strikes
+
+objective_firstgrant                    Accept your first Grant
+objective_firstgrant_description        Accept your first monetary grant, by opening the reports window (pressing the button in the bottom right of the screen), selecting the Grants tab and picking one of the available Grants.
 
 objective_builddeliveriesroom           Set up a delivery area 
 
@@ -1934,7 +2357,7 @@ objective_grant_cellblock500_description            The government offers a grea
 objective_grant_cellblock500_cells                  Raise your prisoner capacity to 500
 
 objective_grant_nutritionresearch                   Inmate Nutrition Research
-objective_grant_nutritionresearch_description       An independent research group are offering funds in order to participate in a trial on the effects of varying inmate eating habits. 
+objective_grant_nutritionresearch_description       An independent research group is offering funds in order to participate in a trial on the effects of varying inmate eating habits. 
 objective_grant_nutritionresearch_poor              Serve a single low quantity, low variety meal for two days
 objective_grant_nutritionresearch_good              Serve three high variety, high quantity meals for two days
 
@@ -2144,6 +2567,14 @@ object_playmat                           Play Mat
 object_guardtower                        Guard Tower
 object_waterboiler                       Water Boiler
 object_pipehotwater                      Hot Water Pipe
+object_stafffood                         Staff Meals
+object_stafffoodboxed                    Staff Meals
+object_newspaper                         Newspaper
+object_strikefire                        Protest Fire
+object_climbingrope                      Climbing Rope
+object_roadbarrier                       Road Barrier
+object_barbedwire                        Barbed Wire
+
 
 material_none                            None
 material_building                        Building (Brick)
@@ -2180,6 +2611,7 @@ material_burntfloor                      Burnt Floor
 material_burntwall                       Burnt Wall
 material_buildingframe                   Building Frame
 material_roof                            Roof
+material_water							 Water
 
 room_none                                None
 room_cell                                Cell
@@ -2190,6 +2622,7 @@ room_dormitory                           Dormitory
 room_familycell                          Family Cell
 room_sharedcell                          Shared Cell
 room_canteen                             Canteen
+room_canteen_staff						 Staff Canteen
 room_kitchen                             Kitchen
 room_shower                              Shower
 room_yard                                Yard
@@ -2265,6 +2698,15 @@ equipment_woodenpickaxe                 Wooden Pickaxe
 equipment_cbradio                       Cb radio
 equipment_axe                           Axe
 equipment_spade                         Spade
+equipment_book                          Book
+equipment_megaphone                     Megaphone
+equipment_magazine                      Magazine
+equipment_batteringram                  Battering Ram
+equipment_iron                          Iron
+equipment_microphone                    Microphone
+equipment_torch                         Torch
+equipment_bookclosed                    Book
+equipment_rope							Rope
 
 research_requires_short                 Requires a *X
 
@@ -2355,11 +2797,12 @@ regime_sleep                            Sleep
 regime_eat                              Eat
 regime_shower                           Shower
 regime_yard                             Yard
-regime_work                             Work
+regime_work                             Work/FreeTime
 regime_lockdown                         Lockdown
 regime_freetime                         FreeTime
 regime_currenttime                      Now
 regime_unspecified                      Unspecified
+regime_worklockdown                     Work/Lockup
 
 regimetooltip_nothing                   Prisoners are locked in their cells. They have nothing to do but reflect on the choices they made that led them to this place.\n\nLong stretches of lockup can prove a decisive punishment to even the hardest of prisoners.
 regimetooltip_sleep                     Prisoners are locked in their cells, and the lights are turned out. Everyone goes to sleep.\n\nExcept those who are digging escape tunnels...
@@ -2368,6 +2811,7 @@ regimetooltip_shower                    Prisoners strip off their clothes and ge
 regimetooltip_yard                      Prisoners are let out of the facility and into the yard for some much needed exercise, sunlight and fresh air.\n\nPrisoners will make use of any facilities within the yard during this time, like the weight benches for working out, telephones to call loved ones, showers etc.
 regimetooltip_work                      Prisoners are put to work around the prison.  Any job openings will be filled and prisoners will automatically report to their job locations. (You can set up job openings from the Deployment screen.)\n\nAll Reform programs also take place during Work time.  Prisoners without a job and not currently assigned to a Reform program are free to roam around the prison as if under 'Freetime'.
 regimetooltip_freetime                  Prisoners are let out of their cell and are permitted to use any facilities around the prison. Prisoners enjoy this time best of all, and will socialise and take care of their needs as best they can.\n\nLong periods of free time can reduce the stress and tension within your prison, but many believe it hardly counts as punishment.
+regimetooltip_worklockdown              Prisoners are put to work around the prison.  Any job openings will be filled and prisoners will automatically report to their job locations. (You can set up job openings from the Deployment screen.)\n\nAll Reform programs also take place during Work time.  Prisoners without a job and not currently assigned to a Reform program are restricted to their cells as if under 'Lockup'.
 
 regime_clear                            Clear the regime for this category of prisoner, and use the default Normal Security regime instead.
 
@@ -2416,7 +2860,7 @@ execution_stage_FinalReport             Final report
 execution_stagetooltip_start            You have scheduled the execution of this inmate, and must now follow the official procedure.
 execution_stagetooltip_lockdown         All prisoners are sent back to their cells and the prison is locked down.
 execution_stagetooltip_testing          The final test pass to ensure everything is working. The electrical supply to the chair is tested under load.  In addition, the final route of the prisoner is planned out - he must be able to walk to the execution room himself.
-execution_stagetooltip_assemble         The Warden and the Chief make thier way to the condemned inmate's cell.  In addition, a priest or spiritual leader of the prisoners choice arrives on site and visits the prisoner in his cell to say final prayers.
+execution_stagetooltip_assemble         The Warden and the Chief make their way to the condemned inmate's cell.  In addition, a priest or spiritual leader of the prisoners choice arrives on site and visits the prisoner in his cell to say final prayers.
 execution_stagetooltip_witnesses        Witnesses to the execution arrive on site, and make their way to the execution facility. This group can include family members of the condemned inmate, and also members of the victims family.\n\nNb. Execution witnesses should be provided with chairs.
 execution_stagetooltip_escort           The condemned inmate is escorted from his cell to the execution facility. The Warden, Chief, and Priest accompany him.
 execution_stagetooltip_execution        With everyone in place and all procedures followed, the final authorisation for the execution is given.
@@ -2439,10 +2883,6 @@ execution_error_NoRouteFromRoad         ERROR: NO ACCESS\nPeople attending the e
 execution_error_NoSpaceInRoom           ERROR: NO SPACE\nThere is not enough empty space in the execution room for the people attending.
 execution_error_NoRoom                  You need an Execution Room before you can begin an Execution
 
-roomerror_nokitchen                     There are no kitchens capable of sending food to this canteen
-roomerror_noprisoners                   There are no prisoners assigned to eat at this canteen
-roomerror_nocanteen_cells               There are no canteens accessible by this cell. Prisoners in this cell will have nowhere to eat
-roomerror_nocanteen_kitchen             There are no canteens accessible by this kitchen. It will not cook any food for meal time
 roomerror_deathrow_sharedcell           Death Row Prisoners require individual cells, and cannot be assigned to shared housing
 roomerror_nonursery                     There are no nurseries accessible by this cell. Family Cells require a nursery for the prisoners to eat in
 roomerror_laundryoverloaded             Laundry Baskets are unable to be unloaded. The Laundry may be too small to meet the demand.
@@ -2484,7 +2924,7 @@ teacher_teaching                        Teaching
 teacher_preparing                       Preparing
 
 prisoner_assignedto                     Requires: *X
-prisoner_roomquality                    Cell quality : *X (*Y)
+prisoner_roomquality                    Cell quality: *X (*Y)
 prisoner_roomquality_average            Average
 prisoner_roomquality_aboveaverage       Above average
 prisoner_roomquality_wayaboveaverage    Way above average
@@ -2504,13 +2944,14 @@ prisoner_informant                      Confidential Informant
 prisoner_dayswithoutincident            *X days without incident
 prisoner_availablemoney                 Cash : $*X
 
-informant_suspicion                     Suspicion
-informant_title                         CONFIDENTIAL INFORMANTS
+informant_title                         INFORMANT
+informant_coverage						COVERAGE
+informant_suspicion						SUSPICION
+informant_status						STATUS
 informant_none                          You Have No CI's On Record
 informant_hint                          (Recruit Prisoners under Duress - eg in Solitary)
 informant_recruitable                   (Potential CI)
 informant_target                        Target
-informant_coverage                      coverage *X%
 informant_dead                          DEAD
 informant_released                      Released
 informant_coverblown                    COVER BLOWN
@@ -2536,6 +2977,8 @@ contraband_tradevalue_veryhigh          $$$$
 
 staff_exhausted                         Exhausted
 staff_tired                             Tired
+staff_pissedoff							Pissed Off
+staff_onstrike                          On Strike
 staff_needsrest                         Staff prefer to rest in a Staff Room.
 
 dog_needskennel                         Dogs need a Kennel to sleep in.
@@ -2596,7 +3039,7 @@ deploymentscheduler_scheduletime        Showing deployment for *X.00 - *Y.00
 supplyanddemand_supplyheader            SUPPLY
 supplyanddemand_demandheader            DEMAND
 
-tooltip_multipleobjects                 Press TAB to cycle objects
+tooltip_multipleobjects                 TAB: Cycle Objects
 remotedoor_noservo                      Remote Doors will not open without a working servo attached.
 
 targettingfood_prisonersassigned        Prisoners assigned : *X
@@ -2646,6 +3089,34 @@ quickbuild_solitarycell                 Solitary Cell
 quickbuild_office                       Office
 quickbuild_luxurycell                   Luxury Cell
 quickbuild_sharedcell                   Shared Cell
+quickbuild_kitchen                      Kitchen
+quickbuild_canteen                      Canteen
+quickbuild_utilityroom                  Utility Room
+quickbuild_classroom                    Class Room
+quickbuild_commonroom                   Common Room
+
+season_current                          Current Season: *X
+season_spring                           Spring
+season_summer                           Summer
+season_autumn                           Autumn
+season_winter                           Winter
+
+weather_current                         Current Weather: *X
+weather_none                            Sunny
+weather_overcast                        Overcast
+weather_rain                            Rain
+weather_snow                            Snow
+weather_heatwave                        Heatwave
+weather_torrentialrain                  Torrential Rain
+
+prisoner_cellerror_nonefree             There are no free cells for this prisoner
+prisoner_cellerror_toohighquality       All of the available cells are too high quality for this prisoner
+prisoner_cellerror_nosolitary           This prisoner requires solitary confinement, but no solitary cells are available
+
+group_all_staff                         All Staff
+staff_onbreak                           On Break
+staff_onbreakremaining					On Break (*Xm)
+staff_breaktime                         Break Times :  
 
 
 # =============================================================================
@@ -2834,6 +3305,7 @@ finance_cost_executioncompensation      Execution Compensation
 finance_cost_shopintake                 Shop Intake
 finance_cost_prisonerwages              Prisoner Wages 
 finance_cost_fine                       Fine
+finance_cost_shopcommission             Shop Sales Commission
 
 
 # =============================================================================
@@ -2865,12 +3337,17 @@ event_subsidence                        Subsidence of the land has destroyed a s
 event_earthquake                        A local earthquake has caused a section of the prison to collapse! 
 event_virus                             We've been getting reports of sickness from a number of prisoners. It might be worth identifying and quarantining the infected to stop it from spreading. 
 event_virus_x                           We've been getting reports of sickness from a number of prisoners, and the symptoms seem quite severe. You should consider quarantining the sick and treating them before it spreads too far. 
+event_treefire                          A fire has started in our forestry!
+event_foodpoisoning                     We've been getting reports of food poisoning amongst the prisoners. Some of the food in the kitchen must have spoiled. Unfortunately for the sick, there isn't much to do but to wait it out.
+event_cilistleak                        We don't know how, but the identities of our confidential informants have got out. If we don't move them somewhere save straight away, they are going to be in real danger.
+event_keysersoze                        A recent high-profile gang case has implicated one of our Minimum Security prisoners as a high ranking gang leader. They've remained under the radar, but now everyone knows who they are...
+event_preacherconversion                One of our more charismatic inmates has become something of a religious evangelist, and others seem to be coming around to their way of thinking. Not a necessarily a problem, but our prisoners may soon have more spiritual needs.
 
 event_massassassination_1               The identities of a number of witnesses in a federal prosecution case have been leaked, and some of them are inmates in our prison.
 event_massassassination_2               Hits have been taken out on them, but we need them alive. You need to identify the prisoners and keep them in one piece until their court date comes up.
 event_massassassination_3_x             We're learning about this late, so you don't have much time before these hits go live. 
 
-event_tvremovaldemand_1                 The media have started a campaign over the amenities granted to prisoners, and it's brining a lot of heat on my office.
+event_tvremovaldemand_1                 The media have started a campaign over the amenities granted to prisoners, and it's bringing a lot of heat on my office.
 event_tvremovaldemand_2                 I'm passing a bill which bans TVs in common areas in prisons, so I need you to remove all TVs from your common rooms or you will be fined. You have 6 hours.
 event_tvremovaldemand_fine              You've failed to remove TVs from your common rooms, which is now required by law. You've been fined, and will continue to receive fines until you comply. 
 event_tvremovaldemand_complete          The media have moved on to something else and the bill banning TVs from common areas has been repealed. Feel free to re-install them if you wish.
@@ -2905,6 +3382,13 @@ event_morefreetimedemand_2              The guards have been hearing whispers th
 event_morefreetimedemand_ignore         The prisoners have settled down and stopped causing trouble over their lack of free time. Maybe they realised they'd have even less if they are always in solitary.
 event_morefreetimedemand_complete       The prisoners demands for more free time have been indulged for long enough, so you can feel free to change their schedule again as you wish.
 
+event_contrabandsurge_complete          We've just discovered that one of the teachers we bring in for the inmates classes has been smuggling in huge amounts of contraband. They've been fired, but the damage has been done at this point.
+event_corruptingspiritualist_complete	One of the spiritual leaders we bring in for our religious programs has been riling up the inmates with all kinds of hateful speech. They've been fired, but the prisoners will take some time to cool down.
+
+event_agitatingradio_1                  According to some of our Guards, a new radio host on the station the prisoners listen to has been saying a lot of things that are riling the inmates up.
+event_agitatingradio_2                  It might be worth removing the radios for the time being, unless they start to take what he's saying seriously.
+event_agitatingradio_complete           That radio host was apparently fired after a lot of complaints. There shouldn't be any more problems with radios in the prison.
+
 # =============================================================================
 # Events Objectives (shown in todo list)
 # =============================================================================
@@ -2928,6 +3412,8 @@ objective_moresleepdemand               Give Prisoners More Sleep
 objective_moresleepdemand_child         Increase sleep time to at least 7 hours a day
 objective_morefreetimedemand            Give Prisoners More Free Time
 objective_morefreetimedemand_child      Increase free time to at least 6 hours a day
+objective_agitatingradio                Agitating Radio Broadcasts
+objective_agitatingradio_child          The current radio broadcasts are getting our inmates riled up...
 
 # =============================================================================
 # Custom warden strings
@@ -2965,7 +3451,6 @@ crime_burglary                    Burglary
 crime_arson                       Arson
 crime_criminaldamage              Criminal Damage
 crime_vandalism                   Vandalism
-crime_violentdisorder             Violent Disorder
 crime_possession                  Possession
 crime_possessionintenttosupply    Possession Intent To Supply
 crime_forgery                     Forgery
@@ -3011,3 +3496,169 @@ crime_cartheft                    Car Theft
 crime_rape                        Rape
 crime_grossindecency              Gross Indecency
 crime_voyeurism                   Voyeurism
+
+# =============================================================================
+# Cause of death
+# =============================================================================
+
+causeofdeath_fight                  Killed in fight with *X
+causeofdeath_fight_weapon           Killed by *X with *W
+causeofdeath_fight_prisoner         Murdered by *X
+causeofdeath_fight_prisoner_weapon  Murdered by *X with *W
+causeofdeath_fight_actor            Killed with *W
+causeofdeath_gang                   Killed by rival gang member
+causeofdeath_gang_weapon            Killed by rival gang member with *W
+causeofdeath_fire                   Died in a fire
+causeofdeath_escaping               Killed by *X while trying to escape
+causeofdeath_escaping_weapon        Killed by *X with *W while trying to escape
+causeofdeath_mauled                 Mauled to death by Guard Dog
+causeofdeath_snitch                 Killed for being a Snitch
+causeofdeath_exlaw                  Killed for being Ex Law Enforcement
+causeofdeath_copkiller              Killed by guards for being a Cop Killer
+causeofdeath_explosion              Killed in an explosion
+causeofdeath_electrocution          Killed by Electrocution
+causeofdeath_starvation             Starved to death
+causeofdeath_virus                  Died from infection
+causeofdeath_overdosed              Overdosed
+causeofdeath_bledout                Bled to death 
+causeofdeath_riot                   Killed during a riot
+causeofdeath_executed               Executed by Electric Chair
+causeofdeath_exposure               Froze to death
+causeofdeath_unknown_1				Cause of Death Unknown.
+causeofdeath_unknown_2 				Unlock Intelligence to determine.
+
+
+# =============================================================================
+# Mutators
+# =============================================================================
+
+codex_mutators_desc                     Mutators modify the way the game plays, adding new challenges or playstyles, but aren't necessarily balanced.
+mutators_random                         Random
+
+mutator_name_bigheads                   Big Head Mode
+mutator_name_moreviolentprisoners       More Violent Prisoners 
+mutator_name_noviolentprisoners         No Violent Prisoners
+mutator_name_fastwalking                Fast Walking
+mutator_name_biggerfights               Bigger Fights
+mutator_name_morevolatileprisoners      Volatile Prisoners
+mutator_name_endlesswinter              Endless Winter
+mutator_name_norevealedreps             No Reputations Revealed
+mutator_name_allrepsrevealed            All Reputations Revealed
+mutator_name_indestructabletrees        Nature Conservation Zone
+mutator_name_alllegendary               The BIG House
+mutator_name_slowdeliveries             Slow Deliveries
+mutator_name_fastdeliveries             Fast Deliveries
+mutator_name_extremelyneedyprisoners    Needy Prisoners
+mutator_name_slowtime                   Slow Time
+mutator_name_burnthedead                Burn The Dead
+mutator_name_gangwarfare                Gang Warfare
+mutator_name_massescapes                Get Me Outta Here!
+mutator_name_notunnels                  No Tunnels
+mutator_name_morecontraband             More Contraband
+mutator_name_nocontrabandlimits         No Contraband Limits
+mutator_name_highdanger                 Danger Zone
+mutator_name_superdrugs                 The Good %$#!
+mutator_name_weirdreputations           Extra Reputations
+mutator_name_nopausing                  No Pausing
+mutator_name_norelease                  No Release
+mutator_name_fastrelease                Short Sentences
+mutator_name_acidrain                   Acid Rain
+mutator_name_permanentday               Permanent Day
+mutator_name_permanentnight             Permanent Night 
+mutator_name_spreadingtrees             Wild Growth
+mutator_name_contrabanddetectors        Contraband Scanners
+mutator_name_superguards                Super-guards
+mutator_name_oldschoolintake            Old-school Intake
+mutator_name_noclipstaff                Spectral Staff
+
+mutator_tooltip_bigheads                Gives your prisoners big heads!
+mutator_tooltip_moreviolentprisoners    Significantly increases the number of prisoners with violent tendancies that you'll receive.
+mutator_tooltip_noviolentprisoners      Only receive prisoners that have no violent tendacies. 
+mutator_tooltip_fastwalking             Everyone in your prison walks twice as fast.
+mutator_tooltip_biggerfights            Makes prisoners far more likely to join in on fights, and less likely to back down from a fight.
+mutator_tooltip_morevolatileprisoners   Makes roughly half your prisoners have the Volatile trait, making them cause trouble just for fun.
+mutator_tooltip_endlesswinter           Brings back the dreaded Exposure status effect, and plunges the world into an eternal freezing winter. (No effect if Weather is disabled.)
+mutator_tooltip_norevealedreps          You won't know anything about the reputations of prisoners getting off the bus. 
+mutator_tooltip_allrepsrevealed         Prisoners getting off the bus will always have their reputations visible.
+mutator_tooltip_indestructabletrees     Local conservation laws mean the trees in this area cannot be chopped down. You'll just have to build around them!
+mutator_tooltip_alllegendary            All prisoners are Legendary. Good luck!
+mutator_tooltip_slowdeliveries          Every single thing you buy needs to arrive on a truck. 
+mutator_tooltip_fastdeliveries          No more waiting for trucks; everything arrives directly in your prison as long as you have space for it.
+mutator_tooltip_extremelyneedyprisoners The needs of your prisoners will increase at a far greater rate. 
+mutator_tooltip_slowtime                Makes the game clock slower, which causes days to be much longer.
+mutator_tooltip_burnthedead             Anyone killed in your prison will spontaneously burst into flames.
+mutator_tooltip_gangwarfare             Only gang members will arrive in your prison. (No effect if Gangs are disabled.)
+mutator_tooltip_massescapes             Prisoners are far more likely to try and dig their way out of your prison, removing any usual limits on escape tunnels.
+mutator_tooltip_notunnels               Prisoners cannot dig escape tunnels.
+mutator_tooltip_morecontraband          More contrband is smuggled into prison, and prisoners are far more likely to steal contraband when given the opportunity. 
+mutator_tooltip_nocontrabandlimits      Removes limits on the types of contraband that can be imported into the prison. Guns? Mops? Clipboards?! All fair game.
+mutator_tooltip_highdanger              The danger level of your prison is always at maximum, you are far more likely to to get prisoners who are violent, and they are much more likely to get into fights. 
+mutator_tooltip_superdrugs              Prisoners who take drugs or alcohol will randomly gain a reputation trait, making them progressively more difficult to deal with.
+mutator_tooltip_weirdreputations        Unlocks a range of new reputations your prisoners can have, that will alter their behaviours and how they interact with your prison.
+mutator_tooltip_nopausing               Removes the ability to pause the game clock while playing.
+mutator_tooltip_norelease               Prisoners are never released; their sentences last forever, and there is no parole.
+mutator_tooltip_fastrelease             All sentences are much shorter, meaning prisoners will cycle through your prison much quicker.
+mutator_tooltip_acidrain                Causes rain and snow to damage any prisoners who are outside. (No effect if Weather is disabled.)
+mutator_tooltip_permanentday            It never gets dark in your prison; it's as bright at midnight as it is at noon!
+mutator_tooltip_permanentnight          The sun never rises here. Your prison will permanently be in darkness. 
+mutator_tooltip_spreadingtrees          Trees can spread, and will grow much faster than normal.
+mutator_tooltip_contrabanddetectors     Metal detectors will detect all forms of contraband, but will also use 5 times as much power. 
+mutator_tooltip_superguards             Your guards are the cream of the crop, and they don't screw around. They're bigger, stronger, faster, and more observant.
+mutator_tooltip_oldschoolintake         Once upon a time, a loaded prisoner bus would show up at your prison every day, whether you wanted them or not. Welcome back to the good old days! You'll get bus loads of prisoners, every single day, whether you have space for them or not.
+mutator_tooltip_noclipstaff             Your staff members can walk through walls.
+
+mutator_title_extrachallenge            Extra Challenge
+mutator_title_extrachallenge_tooltip    These mutators will make your life more difficult in a variety of ways. Sometimes significantly so!
+mutator_title_lightentheload            Lightening The Load
+mutator_title_lightentheload_tooltip    These mutators make your prison easier to manage or reduce the difficulty in some way.
+mutator_title_changetherules            Changing The Rules
+mutator_title_changetherules_tooltip    These mutators change some of the basic rules of the game,         
+mutator_title_somethingdifferent        Something... different
+mutator_title_somethingdifferent_tooltip    This is the weird stuff. They might not make sense, but they will make life more interesting.
+
+# =============================================================================
+# Attract screen
+# =============================================================================
+
+attract_pressanykey                     Press Any Key...
+
+# =============================================================================
+# Help warnings
+# =============================================================================
+
+help_warning_gangleader                 The leader of one of the gangs in the prison is currently being punished. It's your choice how to proceed, but all of their gang members are going to cause a lot of trouble while the punishment is in place.
+help_warning_deathrow                   Our first Death Row prisoner has just arrived. We'll need to make sure we have a Death Row Appeal program set up in a Parole Room, so that they can have their appeal hearings. 
+
+# =============================================================================
+# Graphs
+# =============================================================================
+
+graph_title                             Graphs
+
+graph_label_1                           Data Type 1
+graph_label_2                           Data Type 2
+graph_label_day                         Day
+
+graph_axis_none                         None
+graph_axis_profit                       Profit
+graph_axis_funds                        Funds
+graph_axis_prisonsize                   Prison Size (m²)
+graph_axis_numprisoners                 Num Prisoners
+graph_axis_numstaff                     Num Staff
+graph_axis_releasedprisoners            Released Prisoners
+graph_axis_totalreleasedprisoners       Total Released Prisoners
+graph_axis_escapedprisoners             Escaped Prisoners
+graph_axis_totalescapedprisoners        Total Escaped Prisoners
+graph_axis_entitydeath                  Deaths
+graph_axis_totaldeaths                  Total Deaths
+graph_axis_prisonerdeaths               Prisoner Deaths
+graph_axis_guarddeaths                  Guard Deaths
+graph_axis_securitygrading              Security Grading
+graph_axis_healthgrading                Health Grading
+graph_axis_reformgrading                Reform Grading
+graph_axis_punishmentgrading            Punishment Grading
+graph_axis_reoffendingrate              Reoffending Rate
+graph_axis_prisonvalue                  Prison Value
+graph_axis_prisonercapacity             Prisoner Capacity
+graph_axis_numincidents                 Num Incidents
+graph_axis_totalincidents               Total Incidents
