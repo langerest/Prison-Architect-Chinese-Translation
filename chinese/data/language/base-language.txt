@@ -870,6 +870,8 @@ codex_option_enablecheats				启用工具和作弊模式
 codex_tooltip_enablecheats				在本监狱启用开发者工具和作弊模式。选择后，该模式不可停止。如果取得成就，您将无法得到奖励。另外，您也无法出售本监狱。
 codex_option_staffneeds                 员工需求
 codex_tooltip_staffneeds                满足您的警卫的需求，这意味着他们将需要食物、休息和其他放松才能做好他们的工作。
+codex_option_escapeplans                逃脱计划
+codex_tooltip_escapeplans               允许囚犯尝试更多逃脱方案。他们会尝试翻越外墙、劫持车辆等多种方案。
 codex_option_wardenmode                 典狱长模式
 codex_tooltip_wardenmode                作为典狱长在您建造的监狱里工作。
 codex_option_wardenmode_permadeath      永久死亡
@@ -1016,22 +1018,10 @@ codex_settings_gangs                    启用帮派
 codex_settings_events                   启用事件
 codex_settings_weather                  启用天气
 codex_settings_staffneeds               满足员工需求
+codex_settings_escapeplans              启用逃脱计划
 codex_settings_failureconditions        启用故障模式
 codex_settings_confirm                  这种设置一经启用便无法停用。您确定要启用 *X吗？
 
-codex_packrects							Pack Rectangles
-codex_addboxbutton						Add New Rectangle
-codex_setsize							Set Space Size
-codex_removeallrects					Remove All Rects
-codex_packrects_widthcaption			Space Width
-codex_packrects_heightcaption			Space Height
-codex_packrects_boxwcaption				Rect Width
-codex_packrects_boxhcaption				Rect Height
-
-mods_downscaled_spritesheet				Sprite Sheet Downscaled
-mods_downscaled_spritesheet_msg			The sprite sheet has had to be downscaled due to your graphics card limitations. This is probably a result of activating a lot of mods. Please disable some mods in order to improve quality.
-mods_errors_no_memory					No Mod Sprites Loaded
-mods_errors_no_memory_msg				There is insufficient graphics memory to load additional mod sprites. This is probably a result of activating a lot of mods. Please disable some mods in order to use less memory.
 
 # =============================================================================
 # Graphics Change Confirmation
